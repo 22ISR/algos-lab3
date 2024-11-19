@@ -42,6 +42,14 @@ print(numbers)  # [1, 2, 3, 4, 5]
                         extend</p>
                 </section>
                 <section>
+                    <h1>Ответ</h1>
+                    <pre><code data-trim class="python">
+countries = ["USA", "Canada", "Mexico"]
+countries.extend(["Brazil", "Argentina"])
+print(countries)  # ["USA", "Canada", "Mexico", "Brazil", "Argentina"]
+                    </code></pre>
+                </section>
+                <section>
                     <h1>Метод <code>insert</code></h1>
                     <pre><code data-trim data-line-numbers class="python">
 colors = ["red", "blue", "green"]  
@@ -52,6 +60,33 @@ print(colors)  # ["red", "yellow", "blue", "green"]
                     <h4>Задание</h4>
                     <p>Создайте список из трех городов. Вставьте новый город на второе место с помощью метода insert.
                     </p>
+                </section>
+                <section>
+                    <h1>Ответ</h1>
+                    <pre><code data-trim class="python">
+cities = ["London", "Paris", "Berlin"]
+cities.insert(1, "Rome")
+print(cities)  # ["London", "Rome", "Paris", "Berlin"]
+                    </code></pre>
+                </section>
+                <section>
+                    <h1>Метод <code>remove</code></h1>
+                    <pre><code data-trim class="python">
+items = ["pen", "pencil", "eraser"]  
+items.remove("pencil")  
+print(items)  # ["pen", "eraser"]  
+                    </code></pre>
+                    <hr>
+                    <h4>Задание</h4>
+                    <p>Создайте список из четырех предметов. Удалите один предмет из списка, используя метод remove.</p>
+                </section>
+                <section>
+                    <h1>Ответ</h1>
+                    <pre><code data-trim class="python">
+items = ["pen", "pencil", "eraser", "notebook"]
+items.remove("eraser")
+print(items)  # ["pen", "pencil", "notebook"]
+                    </code></pre>
                 </section>
             </section>
         </div>
