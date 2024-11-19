@@ -88,6 +88,129 @@ items.remove("eraser")
 print(items)  # ["pen", "pencil", "notebook"]
                     </code></pre>
                 </section>
+                <section>
+                    <h1>Метод <code>pop</code></h1>
+                    <pre><code data-trim class="python">
+tasks = ["math", "science", "english"]  
+last_task = tasks.pop()  
+print(tasks)  # ["math", "science"]  
+print(last_task)  # "english"  
+                    </code></pre>
+                    <hr>
+                    <h4>Задание</h4>
+                    <p>Создайте список из трех любимых блюд. Удалите последнее блюдо из списка и выведите его на экран.
+                    </p>
+                </section>
+                <section>
+                    <h1>Ответ</h1>
+                    <pre><code data-trim class="python">
+dishes = ["pizza", "sushi", "pasta"]
+last_dish = dishes.pop()
+print(dishes)  # ["pizza", "sushi"]
+print(last_dish)  # "pasta"
+                    </code></pre>
+                </section>
+                <section>
+                    <h1>Метод <code>index</code></h1>
+                    <pre><code data-trim class="python">
+numbers = [10, 20, 30, 40]  
+print(numbers.index(30))  # 2  
+                    </code></pre>
+                    <hr>
+                    <h4>Задание</h4>
+                    <p>Создайте список из пяти фруктов. Найдите индекс одного из фруктов с помощью метода index и
+                        выведите
+                        его.</p>
+                </section>
+                <section>
+                    <h1>Ответ</h1>
+                    <pre><code data-trim class="python">
+numbers = ["apple", "banana", "cherry", "date", "elderberry"]
+index = numbers.index("cherry")
+print(index)  # 2
+                    </code></pre>
+                </section>
+                <section>
+                    <h1>Метод <code>count</code></h1>
+                    <pre><code data-trim class="python">
+letters = ["a", "b", "a", "c", "a"]  
+print(letters.count("a"))  # 3  
+                    </code></pre>
+                    <hr>
+                    <h4>Задание</h4>
+                    <p>Создайте список из 7 элементов, где несколько элементов повторяются. Подсчитайте количество
+                        повторений одного из элементов с помощью метода count.</p>
+                </section>
+                <section>
+                    <h1>Ответ</h1>
+                    <pre><code data-trim class="python">
+letters = ["a", "b", "a", "c", "a", "d", "b"]
+count_a = letters.count("a")
+print(count_a)  # 3
+                    </code></pre>
+                </section>
+                <section>
+                    <h1>Метод <code>sort</code></h1>
+                    <pre><code data-trim class="python">
+                        scores = [85, 70, 90, 100]  
+                        scores.sort()  
+                        print(scores)  # [70, 85, 90, 100]  
+                    </code></pre>
+                    <hr>
+                    <h4>Задание</h4>
+                    <p>Создайте список из пяти чисел в произвольном порядке. Отсортируйте их с помощью метода sort и
+                        выведите на экран.</p>
+                </section>
+                <section>
+                    <h1>Ответ</h1>
+                    <pre><code data-trim class="python">
+numbers = [5, 2, 8, 1, 4]
+numbers.sort()
+print(numbers)  # [1, 2, 4, 5, 8]
+                    </code></pre>
+                </section>
+                <section>
+                    <h1>Метод <code>reverse</code></h1>
+                    <pre><code data-trim class="python">
+names = ["Alice", "Bob", "Charlie"]  
+names.reverse()  
+print(names)  # ["Charlie", "Bob", "Alice"]  
+                    </code></pre>
+                </section>
+                <section>
+                    <h1>Ответ</h1>
+                    <pre><code data-trim class="python">
+names = ["Alice", "Bob", "Charlie"]
+names.reverse()
+print(names)  # ["Charlie", "Bob", "Alice"]
+                    </code></pre>
+                </section>
+                <section>
+                    <h1>Метод <code>copy</code></h1>
+                    <pre><code data-trim class="python">
+original = [1, 2, 3]  
+copied = original.copy()  
+copied.append(4)  
+print(original)  # [1, 2, 3]  
+print(copied)  # [1, 2, 3, 4]  
+                    </code></pre>
+                    <hr>
+                    <h4>Задание</h4>
+                    <p>
+                        Создайте список из пяти элементов. Сделайте его копию с помощью метода copy и добавьте в копию
+                        новый элемент. Выведите оба списка.
+                    </p>
+                </section>
+                <section>
+                    <h1>Ответ</h1>
+                    <pre><code data-trim class="python">
+original = [1, 2, 3, 4, 5]
+copied = original.copy()
+copied.append(6)
+print(original)  # [1, 2, 3, 4, 5]
+print(copied)    # [1, 2, 3, 4, 5, 6]
+                    </code></pre>
+                </section>
             </section>
         </div>
     </div>
