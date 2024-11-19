@@ -270,6 +270,239 @@ print("Копия списка:", copied_list)
                     </code></pre>
                 </section>
             </section>
+            <section>
+                <section>
+                    <h1>Словари</h1>
+                    <pre><code data-trim class="python">
+student = {
+    "name": "Alice",
+    "age": 21,
+    "subjects": ["Math", "Physics"]
+}
+print(student["name"])  # Alice
+                    </code></pre>
+                    <h4>Задание</h4>
+                    <p>
+                        Выведите дисциплину "Math"
+                    </p>
+                </section>
+                <section>
+                    <h1>Словари</h1>
+                    <pre><code data-trim class="python">
+student = {
+    "name": "Alice",
+    "grades": {
+        "Math": ["C", "B", "A", "C"],
+        "Physics": ["C", "C", "B"]
+    },
+    "exams": {
+        "Chem": "C",
+        "Literature": "B"
+    }
+}
+print(student["exams"]["Chem"])
+                    </code></pre>
+                    <h4>Задание</h4>
+                    <p>
+                        Выведите единственную оценку "A" студента
+                    </p>
+                </section>
+                <section>
+                    <h1>Метод <code>get</code></h1>
+                    <pre><code data-trim class="python">
+person = {"name": "Alice", "age": 25}  
+print(person.get("name"))  # "Alice"  
+print(person.get("gender", "unknown"))  # "unknown"  
+                    </code></pre>
+                    <h4>Задание</h4>
+                    <p>Создайте словарь с тремя ключами: имя, возраст и город. Используйте метод get, чтобы вывести
+                        значение одного из ключей. Попробуйте получить значение несуществующего ключа с указанием
+                        значения по умолчанию</p>
+                </section>
+                <section>
+                    <h1>Ответ</h1>
+                    <pre><code data-trim class="python">
+                    
+                    </code></pre>
+                </section>
+                <section>
+                    <h1>Метод <code>keys</code></h1>
+                    <pre><code data-trim class="python">
+person = {"name": "Bob", "age": 30, "city": "London"}  
+print(person.keys())  # dict_keys(['name', 'age', 'city'])  
+                    </code></pre>
+                    <hr>
+                    <h4>Задание</h4>
+                    <p>Создайте словарь из трех пар ключ-значение. Используйте метод keys, чтобы вывести список всех
+                        ключей словаря.</p>
+                </section>
+                <section>
+                    <h1>Ответ</h1>
+                    <pre><code data-trim class="python">
+                    
+                    </code></pre>
+                </section>
+                <section>
+                    <h1>Метод <code>values</code></h1>
+                    <pre><code data-trim class="python">
+person = {"name": "Bob", "age": 30, "city": "London"}  
+print(person.values())  # dict_values(['Bob', 30, 'London'])  
+                    </code></pre>
+                    <hr>
+                    <h4>Задание</h4>
+                    <p>
+                        Создайте словарь из трех пар ключ-значение. Используйте метод values, затем выведите второе
+                        значение.
+                    </p>
+                </section>
+                <section>
+                    <h1>Ответ</h1>
+                    <pre><code data-trim class="python">
+                    
+                    </code></pre>
+                </section>
+                <section>
+                    <h1>Метод <code>items</code></h1>
+                    <pre><code data-trim class="python">
+person = {"name": "Alice", "age": 25}  
+for key, value in person.items():  
+    print(key, "->", value)  
+# Output:  
+# name -> Alice  
+# age -> 25  
+                    </code></pre>
+                    <hr>
+                    <h4>Задание</h4>
+                    <p>Создайте словарь из трех пар ключ-значение. Используйте метод items для перебора ключей и
+                        значений словаря в цикле, выведите их на экран.</p>
+                </section>
+                <section>
+                    <h1>Ответ</h1>
+                    <pre><code data-trim class="python">
+                    
+                    </code></pre>
+                </section>
+                <section>
+                    <h1>Метод <code>update</code></h1>
+                    <pre><code data-trim class="python">
+person = {"name": "Alice", "age": 25}  
+person.update({"city": "New York", "age": 26})  
+print(person)  # {'name': 'Alice', 'age': 26, 'city': 'New York'}  
+                    </code></pre>
+                    <hr>
+                    <h4>Задание</h4>
+                    <p>Создайте словарь из двух пар ключ-значение. Обновите его, добавив еще одну пару ключ-значение с
+                        помощью метода update.</p>
+                </section>
+                <section>
+                    <h1>Ответ</h1>
+                    <pre><code data-trim class="python">
+
+                    </code></pre>
+                </section>
+                <section>
+                    <h1>Метод <code>pop</code></h1>
+                    <pre><code data-trim class="python">
+person = {"name": "Bob", "age": 30}  
+age = person.pop("age")  
+print(person)  # {'name': 'Bob'}  
+print(age)  # 30  
+                    </code></pre>
+                    <hr>
+                    <h4>
+                        Задание
+                    </h4>
+                    <p>Создайте словарь из трех пар ключ-значение. Удалите одну пару с помощью метода pop и выведите
+                        значение удаленного ключа.</p>
+                </section>
+                <section>
+                    <h1>Метод <code>popitem</code></h1>
+                    <pre><code data-trim class="python">
+person = {"name": "Alice", "age": 25}  
+last_item = person.popitem()  
+print(person)  # {'name': 'Alice'}  
+print(last_item)  # ('age', 25)  
+                    </code></pre>
+                    <hr>
+                    <h4>Задание</h4>
+                    <p>Создайте словарь из трех пар ключ-значение. Удалите последнюю добавленную пару с помощью метода
+                        popitem и выведите её.</p>
+                </section>
+                <section>
+                    <h1>Ответ</h1>
+                    <pre><code data-trim class="python">
+
+                    </code></pre>
+                </section>
+                <section>
+                    <h1>Метод <code>clear</code></h1>
+                    <pre><code data-trim class="python">
+person = {"name": "Alice", "age": 25}  
+person.clear()  
+print(person)  # {}  
+                    </code></pre>
+                    <hr>
+                    <h4>Задание</h4>
+                    <p>Создайте словарь из трех пар ключ-значение. Очистите словарь с помощью метода clear и выведите
+                        его.</p>
+                </section>
+                <section>
+                    <h1>Ответ</h1>
+                    <pre><code data-trim class="python">
+
+                    </code></pre>
+                </section>
+                <section>
+                    <h1>Метод <code>setdefault</code></h1>
+                    <pre><code data-trim class="python">
+person = {"name": "Alice"}  
+age = person.setdefault("age", 25)  
+print(person)  # {'name': 'Alice', 'age': 25}  
+print(age)  # 25  
+                    </code></pre>
+                    <hr>
+                    <h4>Задание</h4>
+                    <p>Создайте словарь с двумя ключами. Добавьте третий ключ со значением по умолчанию с помощью метода
+                        setdefault</p>
+                </section>
+                <section>
+                    <h1>Ответ</h1>
+                    <pre><code data-trim class="python">
+book = {"title": "1984", "author": "George Orwell"}
+# Получаем существующий ключ
+author = book.setdefault("author", "Unknown")
+# Добавляем новый ключ, если его нет
+publisher = book.setdefault("publisher", "Secker & Warburg")
+print(book)  # {'title': '1984', 'author': 'George Orwell', 'publisher': 'Secker & Warburg'}
+print(author)  # George Orwell
+print(publisher)  # Secker & Warburg
+                    </code></pre>
+                </section>
+                <section>
+                    <h1>Метод <code>copy</code></h1>
+                    <pre><code data-trim class="python">
+original = {"name": "Alice", "age": 25}  
+copy_dict = original.copy()  
+copy_dict["age"] = 30  
+print(original)  # {'name': 'Alice', 'age': 25}  
+print(copy_dict)  # {'name': 'Alice', 'age': 30}  
+                    </code></pre>
+                    <hr>
+                    <h4>Задание</h4>
+                    <p>Создайте словарь из трех пар ключ-значение. Сделайте его копию с помощью метода copy. Измените
+                        одно значение в копии и выведите оба словаря.</p>
+                </section>
+                <section>
+                    <h1>Ответ</h1>
+                    <pre><code data-trim class="python">
+movie = {"title": "Inception", "director": "Christopher Nolan"}
+movie_copy = movie.copy()
+movie_copy["year"] = 2010
+print(movie)  # {'title': 'Inception', 'director': 'Christopher Nolan'}
+print(movie_copy)  # {'title': 'Inception', 'director': 'Christopher Nolan', 'year': 2010}
+                    </code></pre>
+                </section>
+            </section>
         </div>
     </div>
 
