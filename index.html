@@ -322,7 +322,11 @@ print(person.get("gender", "unknown"))  # "unknown"
                 <section>
                     <h1>Ответ</h1>
                     <pre><code data-trim class="python">
-                    
+person = {"name": "Alice", "age": 25}
+# Получение значения существующего ключа
+print(person.get("name"))  # Alice
+# Получение значения отсутствующего ключа
+print(person.get("gender", "not specified"))  # not specified
                     </code></pre>
                 </section>
                 <section>
@@ -339,7 +343,9 @@ print(person.keys())  # dict_keys(['name', 'age', 'city'])
                 <section>
                     <h1>Ответ</h1>
                     <pre><code data-trim class="python">
-                    
+items = {"pen": 10, "pencil": 5, "notebook": 50}
+keys = items.keys()
+print(list(keys))  # ['pen', 'pencil', 'notebook']
                     </code></pre>
                 </section>
                 <section>
@@ -358,7 +364,9 @@ print(person.values())  # dict_values(['Bob', 30, 'London'])
                 <section>
                     <h1>Ответ</h1>
                     <pre><code data-trim class="python">
-                    
+countries = {"USA": "Washington", "France": "Paris", "Japan": "Tokyo"}
+values = countries.values()
+print(list(values))  # ['Washington', 'Paris', 'Tokyo']
                     </code></pre>
                 </section>
                 <section>
@@ -379,7 +387,9 @@ for key, value in person.items():
                 <section>
                     <h1>Ответ</h1>
                     <pre><code data-trim class="python">
-                    
+student = {"name": "Bob", "group": "A1"}
+items = student.items()
+print(list(items))  # [('name', 'Bob'), ('group', 'A1')]
                     </code></pre>
                 </section>
                 <section>
@@ -397,7 +407,10 @@ print(person)  # {'name': 'Alice', 'age': 26, 'city': 'New York'}
                 <section>
                     <h1>Ответ</h1>
                     <pre><code data-trim class="python">
-
+product = {"name": "Laptop", "price": 1000}
+# Обновляем цену и добавляем наличие
+product.update({"price": 900, "in_stock": True})
+print(product)  # {'name': 'Laptop', 'price': 900, 'in_stock': True}
                     </code></pre>
                 </section>
                 <section>
@@ -416,6 +429,15 @@ print(age)  # 30
                         значение удаленного ключа.</p>
                 </section>
                 <section>
+                    <h1>Ответ</h1>
+                    <pre><code data-trim class="python">
+car = {"brand": "Toyota", "year": 2010}
+year = car.pop("year")
+print(car)  # {'brand': 'Toyota'}
+print(year)  # 2010
+                    </code></pre>
+                </section>
+                <section>
                     <h1>Метод <code>popitem</code></h1>
                     <pre><code data-trim class="python">
 person = {"name": "Alice", "age": 25}  
@@ -431,7 +453,10 @@ print(last_item)  # ('age', 25)
                 <section>
                     <h1>Ответ</h1>
                     <pre><code data-trim class="python">
-
+data = {"a": 1, "b": 2, "c": 3}
+last_item = data.popitem()
+print(data)  # {'a': 1, 'b': 2}
+print(last_item)  # ('c', 3)
                     </code></pre>
                 </section>
                 <section>
@@ -449,7 +474,9 @@ print(person)  # {}
                 <section>
                     <h1>Ответ</h1>
                     <pre><code data-trim class="python">
-
+data = {"key1": "value1", "key2": "value2"}
+data.clear()
+print(data)  # {}
                     </code></pre>
                 </section>
                 <section>
@@ -501,6 +528,9 @@ movie_copy["year"] = 2010
 print(movie)  # {'title': 'Inception', 'director': 'Christopher Nolan'}
 print(movie_copy)  # {'title': 'Inception', 'director': 'Christopher Nolan', 'year': 2010}
                     </code></pre>
+                </section>
+                <section>
+                    Мега-супер-дупер-задание
                 </section>
             </section>
         </div>
