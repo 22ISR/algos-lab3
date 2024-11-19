@@ -211,6 +211,64 @@ print(original)  # [1, 2, 3, 4, 5]
 print(copied)    # [1, 2, 3, 4, 5, 6]
                     </code></pre>
                 </section>
+                <section>
+                    <h1>Суперзадание</h1>
+                    <ol>
+                        <li>Создайте пустой список для хранения покупок.</li>
+                        <li>С помощью метода append, добавьте три продукта в список.</li>
+                        <li>Добавьте еще два продукта разом, используя метод extend.</li>
+                        <li>Вставьте один продукт на вторую позицию.</li>
+                        <li>Удалите последний продукт из списка и сохраните его в переменной.</li>
+                        <li>Найдите индекс одного из продуктов в списке, и выведите его.</li>
+                        <li>Подсчитайте, сколько раз определенный продукт встречается в списке.
+                        </li>
+                        <li>Отсортируйте список в алфавитном порядке и выведите результат.</li>
+                        <li>Измените порядок элементов списка на обратный </li>
+                        <li>Создайте копию списка, добавьте 3 элемента и выведите обе версии.</li>
+                    </ol>
+                </section>
+                <section>
+                    <h1>Ответ</h1>
+                    <pre><code data-trim class="python">
+# 1. Создаем пустой список и добавляем продукты
+shopping_list = []
+shopping_list.append("milk")
+shopping_list.append("bread")
+shopping_list.append("butter")
+
+# 2. Добавляем еще два продукта
+shopping_list.extend(["eggs", "cheese"])
+
+# 3. Вставляем продукт на вторую позицию
+shopping_list.insert(1, "apple")
+
+# 4. Удаляем последний продукт
+last_item = shopping_list.pop()
+
+# 5. Находим индекс определенного продукта
+index_of_bread = shopping_list.index("bread")
+
+# 6. Считаем количество повторений определенного продукта
+count_of_apple = shopping_list.count("apple")
+
+# 7. Сортируем список
+shopping_list.sort()
+
+# 8. Меняем порядок на обратный
+shopping_list.reverse()
+
+# 9. Создаем копию списка
+copied_list = shopping_list.copy()
+copied_list.extend(["orange", "apple", "kiwi"])
+
+# Выводим результаты
+print("Изначальный список:", shopping_list)
+print("Удаленный продукт:", last_item)
+print("Индекс 'bread':", index_of_bread)
+print("Количество 'apple':", count_of_apple)
+print("Копия списка:", copied_list)
+                    </code></pre>
+                </section>
             </section>
         </div>
     </div>
